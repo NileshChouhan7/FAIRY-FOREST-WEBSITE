@@ -1,0 +1,721 @@
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --primary-color:#523EF5;
+    --secondary-color:#CDEE14;
+    --black-color:#000000;
+    --font-color:#333333;
+    --light-color:#ffffff;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+
+
+/* Navbar */
+.navbar{
+    background: var(--primary-color);
+ 
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+
+}
+.navbar .navbar-brand{
+ color: var(--light-color);
+ font-size: 24px;
+ font-weight: 500;
+}
+
+.navbar .navbar-nav a{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--light-color);
+    margin:0px 15px;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 2rem;
+    /* line-height:1; */
+    background-color: rgba(0,0,0,0);
+    border: none;
+    /* border-radius:10px; */
+    transition: box-shadow .15s ease-in-out;
+    outline: none;
+    color: #fff;
+}
+
+
+
+/* home page banner */
+
+.banner-section .img-fuild svg {
+    height: 500px;
+    width: 650px;
+}
+
+.banner-section .hero-text {
+    top: 10rem;
+    position: relative;
+}
+.banner-section .hero-text .sub-heading p{
+    font-size: 16px;
+    background-color:#f0f0f0;
+    display: inline;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.banner-section .hero-text .main-heading h3{
+    font-size: 60px;
+    margin: 20px 0px;
+}
+
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.btn{
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+}
+
+/* Web-design page */
+
+.web-banner{
+    background-image: url('/assets/img/contact-banner.svg');
+    position: relative; 
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color);
+    background-size: cover;
+}
+.web-banner .page-title .sub-text{
+    font-size: 25px;
+    font-weight:700;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.web-banner .page-title .sub-dec{
+    font-size: 20px;
+    font-weight:400;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.web-banner .page-title h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.more-btn{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px;
+    color: var(--black-color) !important;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: auto;
+}
+.more-btn a {
+    color: var(--black-color);
+}
+.book-btn{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 40px;
+    text-align: center;
+    color: var(--black-color) !important;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px;
+    width: auto;
+}
+.book-btn a {
+    color: var(--black-color);
+}
+.explore-btn{
+    
+    display: flex;
+    justify-content: center;
+    /* margin: 0px 10px; */
+    justify-items: center;
+}
+
+.web-banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.25);
+}
+
+
+/* Multiple logos */
+
+.multiple-logo{
+    background-color: var(--black-color);
+}
+.multiple-logo .container {
+    overflow: hidden;
+  }
+ .multiple-logo .container .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+  }
+  .multiple-logo .container .slider .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  .multiple-logo .container .slider .logos .fab {
+    width: 100%;
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  }
+
+  .multiple-logo-2{
+    background-color: var(--primary-color);
+}
+.multiple-logo-2 .container {
+    overflow: hidden;
+  }
+ .multiple-logo-2 .container .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+  }
+  .multiple-logo-2 .container .slider .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  .multiple-logo-2 .container .slider .logos .fab {
+    width: 100%;
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  }
+  
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* E-Commerce */
+.E-Commerce-banner{
+    background-image: url('/assets/img/contact-banner.svg');
+    position: relative; 
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color);
+    background-size: cover;
+}
+.E-Commerce-banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.25);
+}
+.E-Commerce-banner .page-title .sub-text{
+    font-size: 25px;
+    font-weight:700;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+
+}
+.E-Commerce-banner .page-title h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+}
+.E-Commerce-banner .page-title .sub-dec{
+    font-size: 20px;
+    font-weight:400;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.E-Commerce-banner .container,.web-banner .container,.contact-banner .container{
+    z-index: 9;
+}
+
+
+/* Portfolio Section  */
+.portfolio{
+    background: linear-gradient(90deg, #523EF5 0%, #5543EC 100%);
+    padding: 40px 0px;
+}
+
+.portfolio .port-content .heading h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--light-color);
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.portfolio .port-content .heading p{
+    text-align: center;
+    color:var(--light-color);
+    font-size: 16px;
+
+}
+.gallery {
+    margin-top: 40px;
+  }
+  img.anime-img {
+    margin-top: -140px;
+    margin-left: -120px;
+    position: absolute;
+    z-index: 9 !important;
+
+}
+img.anime-img-2 {
+    position: absolute;
+    z-index: 9 !important;
+    height: 250px;
+    width: 250px;
+    right: 80px;
+    margin-top:45%;
+
+
+}
+  
+  .gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .gallery .gallery-item img {
+    transition: 0.3s;
+  }
+  
+  .gallery .gallery-links {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+  }
+  
+  .gallery .gallery-links .preview-link,
+  .gallery .gallery-links .details-link {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    line-height: 1.2;
+    margin: 30px 8px 0 8px;
+  }
+  
+  .gallery .gallery-links .preview-link:hover,
+  .gallery .gallery-links .details-link:hover {
+    color: #fff;
+  }
+  
+  .gallery .gallery-links .details-link {
+    font-size: 30px;
+    line-height: 0;
+  }
+  
+  .gallery .gallery-item:hover .gallery-links {
+    opacity: 1;
+  }
+  
+  .gallery .gallery-item:hover .preview-link,
+  .gallery .gallery-item:hover .details-link {
+    margin-top: 0;
+  }
+  
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .glightbox-clean .gslide-description {
+    background: #222425;
+  }
+  
+  .glightbox-clean .gslide-title {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+  
+/* Pricing Section  */
+
+
+.pricing-section{
+    background: var(--light-color);
+    padding: 40px 0px;
+}
+
+.pricing-section .pricing-title  h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--black-color);
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+
+/* Schedule Section */
+
+.schedule-section{
+    background: linear-gradient(90deg, #F7F7F7 0%, #F7F7F7 100%);
+    padding: 40px 0px;
+}
+
+.schedule-section .schedule-title  h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--black-color);
+    font-size: 28px;
+    font-weight: 600;
+
+}
+.schedule-section .schedule-title p{
+    text-align: center;
+    color:var(--black-color);
+    font-size: 16px;
+
+}
+.schedule-section .card{
+    border: none;
+    border-radius: 0%;
+    padding: 25px;
+    width: 25rem !important;
+}
+.schedule-section .card .card-title{
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 700;
+}
+.schedule-section .card .card-text{
+    text-align: center;
+}
+
+img.card-img-top {
+    height: 200px;
+    width: auto;
+    background: currentColor;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.schedule-section .card .more-btn {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 20px 10px;
+    text-align: center;
+    margin-left: -40px;
+    margin-right: -40px;
+    color: var(--black-color) !important;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: auto;
+}
+
+
+/* Contact page */
+.contact-banner{
+    background-image: url('/assets/img/contact-banner.svg');
+    position: relative; 
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-color);
+    background-size: cover;
+}
+.contact-banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.25);
+}
+.contact-banner .page-title .sub-text{
+    font-size: 25px;
+    font-weight:700;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+
+}
+.contact-banner .page-title h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+}
+.contact-section .form{
+    margin: 40px 20px;
+}
+.contact-section .our-team .team-dec{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    white-space: break-spaces;
+
+}
+.contact-section .our-team .forest-mail{
+    text-align: center;
+    font-size: 20px;
+    white-space: break-spaces;
+
+}
+.forest-mail a{
+    color: #FF9D00;
+}
+.get-help{
+    background-image: url('/assets/img/Getsupport-Hero-bg.png.svg');
+    position: relative; 
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.get-help::before{
+    content: "";
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* height: 40vh; */
+    background-color: rgba(0,0,0,0.05);
+
+}
+.get-help .container{
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    justify-items:center;
+}
+.get-help .title-txt {
+    margin-top: 8rem;
+
+}
+.get-help .title-txt h3{
+    font-size: 28px;
+
+}
+.get-help .title-txt p{
+    font-size: 18px;
+
+}
+.get-help .img-fuild img {
+    margin-top: 12rem;
+}
+
+
+/* Footer */
+.footer{
+    padding: 40px;
+    background-color: var(--black-color);
+}
+.footer .footer-menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .footer-menu ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.footer .footer-menu ul li{
+   margin-bottom: 5px;
+}
+.footer .footer-menu ul li a{
+    text-decoration: underline;
+    color: var(--light-color);
+    font-size: 14px;
+ }
+.footer-item .heading h5{
+    font-size:16px;
+    color: var(--light-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width:1199px){
+    .banner-section .img-fuild svg {
+        height:400px;
+        width: 450px;
+    }
+ }
+
+@media (max-width:991px){
+    .banner-section .img-fuild svg {
+        height: 350px;
+        width: 400px;
+    }
+
+ }
+
+@media(max-width:768px){ 
+
+    .banner-section .img-fuild svg {
+        height:300px;
+        width: 350px;
+    }
+    .footer .footer-menu{
+        display: block;
+    }
+}
+
+@media (max-width:581px) {
+    .banner-section .hero-text {
+        top: 5rem;
+    }
+    .banner-section .hero-text .sub-heading p{
+        font-size: 14px;
+    }
+    .banner-section .hero-text .main-heading h3{
+        font-size: 40px;
+    }
+
+
+    .banner-section .img-fuild svg {
+        height: 250px;
+        width: 350px;
+    }
+    .back-to-top {
+        width: 48px;
+        height: 48px;
+    }
+    .footer .footer-menu{
+        display: block;
+    }
+    .contact-banner, .web-banner,.E-Commerce-banner{
+        height: 50vh;
+    }
+    .contact-banner::before, .web-banner::before,.E-Commerce-banner::before{
+        height: 50vh;
+    }
+    .explore-btn {
+        flex-wrap: wrap;
+    }
+
+    .contact-banner .page-title h1{
+        font-size: 28px;
+    }
+    .contact-banner .page-title .sub-text{
+        font-size: 16px;
+    }
+    .contact-banner .page-title .sub-dec{
+        font-size: 14px;
+    }
+
+
+    .web-banner .page-title h1{
+        font-size: 28px;
+    }
+    .web-banner .page-title .sub-text{
+        font-size: 16px;
+    }
+    .web-banner .page-title .sub-dec{
+        font-size: 14px;
+    }
+
+    .E-Commerce-banner .page-title h1{
+        font-size: 28px;
+    }
+    .E-Commerce-banner .page-title .sub-text{
+        font-size: 16px;
+    }
+    .E-Commerce-banner .page-title .sub-dec{
+        font-size: 14px;
+    }
+    .more-btn{
+        padding: 5px 10px;
+    }
+    .more-btn a{
+        font-size: 12px;
+    }
+    .our-team .team-dec {
+        font-size: 16px;
+    }
+    .get-help {
+        height: 98vh;
+    }
+    .get-help::before {
+        height: 98vh;
+    }
+   
+}
