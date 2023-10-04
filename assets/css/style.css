@@ -15,7 +15,10 @@ body{
     overflow-x: hidden;
 }
 
-
+.section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 /* Navbar */
 .navbar{
@@ -52,11 +55,13 @@ body{
 
 
 
+
 /* home page banner */
 
-.banner-section .img-fuild svg {
-    height: 500px;
-    width: 650px;
+.banner-section img {
+    height: 400px;
+    width: auto;
+    margin: 85px 0px;
 }
 
 .banner-section .hero-text {
@@ -76,6 +81,17 @@ body{
     margin: 20px 0px;
 }
 
+.contact-btn{
+    border: none;
+    border-radius: 25px;
+    background-color: var(--black-color);
+    padding: 10px 20px;
+}
+.contact-btn a{
+    color: var(--light-color);
+    font-size: 14px;
+    font-weight: 700;
+}
 
 /* Back to top button */
 .back-to-top {
@@ -98,10 +114,46 @@ body{
     border: 2px solid var(--secondary-color);
 }
 
+
+/* About Section  */
+.about-section{
+    margin: 50px 0px;
+}
+.about-section .about-intro{
+    padding: 40px 20px;
+}
+.about-section .about-intro .founder-team h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+.about-section .about-intro .founder-team p{
+    font-size: 16px;
+
+
+}
+
+
+/* SEO-section  */
+.search-optimize-section .heading h3{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--black-color);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.search-optimize-section .heading p{
+    text-align: center;
+    color:var(--black-color);
+    font-size: 16px;
+    margin: 0rem 10rem;
+}
 /* Web-design page */
 
 .web-banner{
-    background-image: url('/assets/img/contact-banner.svg');
+    background-image: url('/assets/img/web-design-banner.svg');
     position: relative; 
     height: 70vh;
     width: 100%;
@@ -110,6 +162,16 @@ body{
     justify-content: center;
     background-color: var(--black-color);
     background-size: cover;
+}
+.web-banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 70vh;
+    background-color: rgba(0,0,0,0.5);
 }
 .web-banner .page-title .sub-text{
     font-size: 25px;
@@ -179,17 +241,6 @@ body{
     justify-items: center;
 }
 
-.web-banner::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    height: 70vh;
-    background-color: rgba(0,0,0,0.25);
-}
-
 
 /* Multiple logos */
 
@@ -252,7 +303,7 @@ body{
 
 /* E-Commerce */
 .E-Commerce-banner{
-    background-image: url('/assets/img/contact-banner.svg');
+    background-image: url('/assets/img/e-commerce-banner.svg');
     position: relative; 
     height: 70vh;
     width: 100%;
@@ -270,7 +321,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 70vh;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.5);
 }
 .E-Commerce-banner .page-title .sub-text{
     font-size: 25px;
@@ -322,8 +373,10 @@ body{
     text-align: center;
     color:var(--light-color);
     font-size: 16px;
-
+    margin: 0rem 13rem;
 }
+
+
 .gallery {
     margin-top: 40px;
   }
@@ -421,13 +474,78 @@ img.anime-img-2 {
     font-weight: 600;
 
 }
+.pricing-card .heading h2 {
+    font-size: 26px;
+    text-align: center;
+    white-space: pre-line;
+    margin: 20px 0px;
+}
+.pricing-card .heading p{
+    font-size: 18px;
+    text-align: center;
+    white-space: pre-line;
+    margin: 40px 0px;
+}
+.pricing-card .service-list h3{
+    font-size: 16px;
+}
+.pricing-title {
+    margin-bottom: 20px;
+}
+.pricing-card img {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
+.service-list ul {
+    list-style-type: none;
+}
+.service-list ul li{
+   margin: 5px 0px;
+}
+.service-list ul li span{
+    font-size: 14px;
+ }
+
+ .pricing-rate h5{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-left: 30px;
+    margin-bottom: 0px;
+ }
+ .pricing-rate span{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-left: 30px;
+
+ }
+ .pricing-section .card{
+    border: none;
+    border-radius: 0%;
+    box-shadow: 0px 1px 2px 1px #0000001A;
+
+ }
+ .pricing-section .col-md-4{
+    width: 30% !important;
+    margin: 40px 20px ;
+ }
 
 /* Schedule Section */
 
 .schedule-section{
     background: linear-gradient(90deg, #F7F7F7 0%, #F7F7F7 100%);
     padding: 40px 0px;
+}
+.schedule-section .schedule-title img {
+    position: absolute;
+    right: 18%;
+    margin-top: -50px;
+    height: 180px;
+    width: 180px;
 }
 
 .schedule-section .schedule-title  h2{
@@ -442,6 +560,7 @@ img.anime-img-2 {
     text-align: center;
     color:var(--black-color);
     font-size: 16px;
+    margin: 0rem 16rem;
 
 }
 .schedule-section .card{
@@ -503,7 +622,7 @@ img.card-img-top {
     bottom: 0px;
     left: 0px;
     height: 70vh;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.5);
 }
 .contact-banner .page-title .sub-text{
     font-size: 25px;
@@ -716,6 +835,55 @@ img.card-img-top {
     }
     .get-help::before {
         height: 98vh;
+    }
+    .schedule-section .card {
+        width: auto !important;
+    }
+    .pricing-section .col-md-4 {
+        width: auto !important;
+        margin:auto;
+    }
+    .schedule-section .card .more-btn {
+    font-size: 14px;
+    margin-left: -10px;
+    margin-right: -10px;
+    }
+    .portfolio .port-content .heading p {
+        margin: 0rem;
+    }
+    img.anime-img {
+        margin-top: -30px;
+        margin-left: -30px;
+        height: 150px;
+        width: 150px;
+    }
+    img.anime-img-2 {
+        height: 150px;
+        width: 150px;
+        right: 0;
+
+
+    }
+    .schedule-section .schedule-title img{
+        display: none
+    }
+    .schedule-section .schedule-title p,.search-optimize-section .heading p  {
+        margin: 0rem;
+        font-size: 14px;
+    }
+
+    .seo-img img{
+        height: 160px;
+        width: auto;
+    }
+    .about-img img{
+        height: 200px;
+        width: auto;
+    }
+    .banner-section img {
+        height: 200px;
+        width: auto;
+        margin: 85px 0px;
     }
    
 }
